@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addnotice">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bockgrpundColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:text="You can add your suggesions to developers"
+        android:textColor="@color/bockgrpundColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_add_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="your suggestion"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/send_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/signup_et_tv"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/bockgrpundColor"
+        android:textSize="20sp" />
+</LinearLayout>

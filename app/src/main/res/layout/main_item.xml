@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/bockgrpundColor"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="40dp"
+
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/lottie_background_2"
+                android:padding="5dp">
+
+                <!--             <com.airbnb.lottie.LottieAnimationView-->
+                <!--                 android:id="@+id/lottie_main"-->
+                <!--                 android:layout_width="50dp"-->
+                <!--                 android:layout_height="50dp"-->
+                <!--                 android:scaleType="centerCrop"-->
+                <!--                 app:lottie_autoPlay="true"-->
+                <!--                 app:lottie_loop="true"-->
+                <!--                 app:lottie_rawRes="@raw/close"></com.airbnb.lottie.LottieAnimationView>-->
+
+                <TextView
+                    android:id="@+id/tv_mian_item_possition"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="1"
+                    android:textColor="@color/bockgrpundColor"
+                    android:textSize="18sp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_company_name_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Company name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_details_time_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_company_name_main"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_location_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_details_time_main"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Location"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image_location_main"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/tv_details_time_main"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tv_location_main"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/location" />
+
+            <Button
+                android:id="@+id/btn_more_details_main"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/tv_details_time_main"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/image_location_main"
+                android:background="@drawable/btn_more"
+                android:drawableRight="@drawable/ic_more2"
+                android:padding="4dp"
+                android:text="more"
+                android:textColor="@color/bockgrpundColor"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

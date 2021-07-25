@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615077346700",
+    "project_id": "final-project-e9ae1",
+    "storage_bucket": "final-project-e9ae1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615077346700:android:3437c05d3d0fb46473eaa9",
+        "android_client_info": {
+          "package_name": "ahmed.ucas.edu.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615077346700-hnn03f8pi4ag2l9cjulktttrahphnqk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyGnwYRJSAd6Pn9RPhzH7BYtc95g9BvV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615077346700-hnn03f8pi4ag2l9cjulktttrahphnqk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

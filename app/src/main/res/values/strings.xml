@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Appointment</string>
+
+
+
+    <string-array name="Companies">
+        <item>chose place</item>
+        <item>Islamic university</item>
+        <item>al azhar</item>
+        <item>gaza university</item>
+        <item>pal university</item>
+        <item>hospital</item>
+        <item>mosque</item>
+    </string-array>
+
+
+    <string-array name="location">
+        <item>your place</item>
+        <item>Gaza</item>
+        <item>Rafah</item>
+        <item>Kanunes</item>
+        <item>Nuseirat</item>
+        <item>bate hanoun</item>
+        <item>bate lahia</item>
+
+    </string-array>
+</resources>

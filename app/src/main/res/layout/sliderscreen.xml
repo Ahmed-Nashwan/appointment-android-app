@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bockgrpundColor">
+
+    <ImageView
+        android:id="@+id/image_3indercator"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/backimage" />
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_sub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/image_onboarding1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:text="Easily book appointments"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_onboarding1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/on_boarding_example1" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_onboarding1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/indecator1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/indecator" />
+
+        <TextView
+            android:id="@+id/indecator2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+
+            android:layout_toRightOf="@id/indecator1"
+            android:background="@drawable/indecator2" />
+
+        <TextView
+            android:id="@+id/indecator3"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/indecator2"
+            android:background="@drawable/indecator2" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_getting_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/go"
+        android:drawablePadding="7dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Getting started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

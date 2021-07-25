@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bockgrpundColor"
+    tools:context=".login">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/login" />
+
+            <EditText
+                android:id="@+id/et_username_login"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_number_edittext"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="7dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/bockgrpundColor"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_password_login"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_username_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_number_edittext"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="7dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/bockgrpundColor"
+                android:textSize="16sp" />
+
+<!--           <FrameLayout-->
+<!--               android:id="@+id/frame"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:layout_below="@id/et_password_login"-->
+<!--               android:layout_centerHorizontal="true">-->
+
+<!--               <ProgressBar-->
+<!--                   android:id="@+id/progress_bar_login"-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:layout_gravity="center"-->
+<!--                   >-->
+
+<!--               </ProgressBar>-->
+
+<!--               <Button-->
+<!--                   android:id="@+id/btn_login"-->
+<!--                   android:layout_width="270dp"-->
+<!--                   android:layout_height="wrap_content"-->
+
+<!--                   android:layout_marginTop="30dp"-->
+<!--                   android:background="@drawable/btn_login"-->
+<!--                   android:text="LOGIN"-->
+<!--                   android:textColor="@color/white"-->
+<!--                   android:textSize="20sp" />-->
+
+
+<!--           </FrameLayout>-->
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/btn_login"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_password_login"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:spinning_bar_color="@color/colorAccent"
+                android:background="@drawable/btn_login"
+                />
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="do not have an account?"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_signup"
+                android:text="sign up"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+            android:layout_below="@id/btn_signup"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp">
+
+                <ImageView
+                    android:id="@+id/image_under_logo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    app:srcCompat="@drawable/judge" />
+
+                <ImageView
+                    android:id="@+id/image_under_logo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@id/image_under_logo1"
+                    app:srcCompat="@drawable/judge" />
+
+                <ImageView
+                    android:id="@+id/image_under_logo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image_under_logo3"
+                    app:srcCompat="@drawable/judge2" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
